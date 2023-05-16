@@ -1,0 +1,174 @@
+
+
+/*******************************************************************************/
+/* Various fixes */
+/*******************************************************************************/
+
+.category-main-banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    min-width: var(--d-max-width);
+    margin-left: 1em;
+    text-align: left;
+}
+
+.category-banner-logo {
+    align-self: center;
+}
+
+
+.voting .title-voting {
+    padding-top: 0;
+}
+
+.title-voting {
+    padding-right: 0;
+    float: none;
+    padding-bottom: 2em;
+    
+}
+
+.voting-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.vote-button {
+    border-radius: 0 10px 10px 0;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #6161ff;
+    margin-top: 0;
+}
+
+.vote-count-wrapper {
+    border-radius: 10px 0 0 10px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #6161ff;
+    height: 38px;
+    font-size: 14px;
+    font-weight: 500;
+    .vote-count {
+        padding: 5px;
+    }
+}
+
+#new-create-topic {
+    background: #6161ff;
+    color: #ffffff;
+}
+
+/* fix font for search banner */
+.custom-search-banner h1 {
+    font-family: "Poppins",sans-serif;
+    font-size: 72px;
+}
+.custom-search-banner p {
+    font-family: "Poppins",sans-serif;
+    font-size: 20px;
+}
+
+/*******************************************************************************/
+/* Category banner CSS */
+/*******************************************************************************/
+
+.categories-banner-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.category-title-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.category-title-link:visited {
+    text-decoration: none;
+    color: #000000;
+}
+
+.category-title-link:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+
+.category-description .cooked {
+    font-size: 14px;
+    font-weight: 400;
+    overflow: hidden;
+}
+
+.category-title {
+    font-size: 18px;
+    font-weight: 600;
+    .category-name {
+        padding: 10px;
+    }
+}
+
+.category-description {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.category-logo img {
+    width: auto;
+    height: 25px;
+    padding: 10px;
+    padding-bottom: 20px;
+    
+}
+
+.shortdesc1,.shortdesc2,.shortdesc3,.shortdesc4 {
+    display:none;
+}
+
+.category-banner-platform-discussions {
+    border: 1px solid #00CA72;
+    .shortdesc1 {
+        display: flex;
+    }
+}
+.category-banner-platform-discussions:hover {
+    background: #E2F0E7;
+}
+
+.category-banner-announcements {
+    border: 1px solid #6161FF;
+    .shortdesc2 {
+        display: flex;
+    }
+}
+
+.category-banner-announcements:hover {
+    background: #ECEFF8;
+}
+
+.category-banner-submit-an-idea {
+    border: 1px solid #FFCC00;
+    .shortdesc3 {
+        display: flex;
+    }
+}
+
+.category-banner-submit-an-idea:hover {
+    background: rgba(255, 203, 0, 0.2);
+}
+
+.category-banner-community-events {
+    border: 1px solid #CFCFF9;
+    .shortdesc4 {
+        display: flex;
+    }
+}
+
+.category-banner-community-events:hover {
+    background: #ECEFF8;
+}

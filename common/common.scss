@@ -1,0 +1,379 @@
+/*******************************************************************************/
+/* Font */
+/*******************************************************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body, h1, h2, h3, h4, h5, h6, a, p {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*******************************************************************************/
+/* Monday category style */
+/*******************************************************************************/
+
+.category-boxes {
+    grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+}
+
+.category-boxes .category-box {
+    border: 0px solid #6C6CFF !important;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.category-box-inner {
+    border: 1px solid #6C6CFF !important;
+    border-radius: 8px;
+}
+
+.category-boxes h3, .category-boxes .description {
+    text-align: left;
+}
+
+.category-boxes .subcategories {
+    display: none;
+}
+
+.category-boxes .category-box .category-box-inner > .category-logo {
+    width: 135px;
+    height: 135px;
+    background: var(--category-color);
+    margin: 0.2em;
+    border-radius: 8px;
+    min-width: 135px;
+}
+
+.categories-list .category .category-logo.aspect-image {
+    padding-top: 3em;
+    height: 135px;
+    width: 135px;
+    margin-top: 0;
+}
+
+.category-boxes .category-box .category-box-inner .category-details {
+    align-self: center;
+    margin-left: 2em;
+}
+
+
+.category-boxes .category-box .category-box-inner {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    padding: 0;
+}
+
+
+
+/*******************************************************************************/
+/* Various patches*/
+/*******************************************************************************/
+
+.category-heading {
+    display: none;
+}
+
+.search-menu {
+    input[type="text"] {
+        color: #6161FF;
+        padding: 1em 1em 1em 3em;
+    }
+}
+
+.custom-search-banner-wrap > p {
+    font-size: 20px;
+}
+
+.landing-page {
+    #main-outlet {
+        .contents,footer.topic-list-bottom {
+            display: none;
+            
+        }
+    }
+}
+
+.bottom-wrapper {
+    padding-top: 2em;
+}
+.feed-link {
+    background-color: #6161FF;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 24px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.feed-link:hover, .feed-link:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#navigation-bar {
+    li:nth-last-child(1),
+    li:nth-last-child(2),
+    li:nth-last-child(3),
+    li:nth-last-child(4),
+    li:nth-last-child(5) {
+      display: none;
+    }
+  }
+  
+body.category-submit-an-idea #navigation-bar {
+    li:nth-last-child(1),
+    li:nth-last-child(2),
+    li:nth-last-child(3),
+    li:nth-last-child(4),
+    li:nth-last-child(5) {
+      display: flex;
+    }
+  }
+  
+body.category-submit-an-idea .category-breadcrumb {
+    display: none !important;
+    
+}
+
+/* Fixes by Richard */
+
+
+/* fix colors for button and links in big blue footer */
+
+.bigBlueFooter {
+    a:hover, a:visited {
+        color: #fff;
+    }
+}
+
+/* make background for topic list on home page white */
+
+.custom-homepage-columns .loading-container .topic-list .topic-list-body .topic-list-item:nth-child(2n+1) {
+    background-color: #fff;
+}
+
+/* fix tags and vote counts */
+
+a.discourse-tag {
+  background: #fff !important;
+  border-radius: 5px;
+  color: #111 !important;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  padding: 5px 10px !important;
+  border: 1px solid #6161ff;
+  margin-right: 10px !important;
+}
+
+a.discourse-tag.list-vote-count {
+  background: #6161ff !important;
+  color: #fff !important;
+  position: relative;
+  padding-left: 7px;
+}
+
+.list-vote-count.voted {
+  font-weight: normal;
+}
+ 
+/* align show more activity button below topic list on front page to the left */ 
+.feed-link {
+    margin-left: 0px;
+    padding: 10px 20px;
+}
+
+.category-dach, .category-submit-an-idea, .category-community-events {
+    .category-title-contents {
+        color: #000;
+    }
+}
+
+/* Calendar styling */
+#upcoming-events-calendar.fc-unthemed .fc-bg td.fc-today, #category-events-calendar.fc-unthemed .fc-bg td.fc-today {
+    background-color: #eceff8;
+}
+#category-events-calendar.fc-unthemed .fc-content {
+    background-color: #6161ff;
+    color: #fff;
+}
+
+/* new create topic button icon */
+#new-create-topic.btn .d-icon {
+    color: #fff;
+}
+
+/* Change font weight for "community" */
+.d-header #site-text-logo {
+    font-weight: 300;
+}
+
+/*Extra Text for Staging Site */
+.menu-brand-logo {
+    display: flex;
+    flex-direction: row;
+}
+.menu-brand-logo:after {
+    content: "| Staging Site";
+    font-size: 18px;
+    font-weight: 300;
+    white-space: nowrap;
+    padding: 1em 1em 0.8em 0.4em;
+}
+.top-menu {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* login/signup */
+
+.d-modal.create-account .login-welcome-header, 
+.d-modal.login-modal .login-welcome-header, 
+.invites-show .login-welcome-header, 
+.admin-invite-page .login-welcome-header {
+    background: inherit;
+    .waving-hand {
+        display: none;
+    }
+}
+
+
+#login-form #credentials input {
+    height: 40px;
+}
+.modal-footer #login-button {
+    margin-right: 0px;
+    width: 100%;
+    svg {
+        display: none;
+    }
+}
+
+#new-account-link::before {
+    content: "Don't have an account yet?";
+    margin-right: 0.5em;
+    color: var(--primary-high);
+}
+#new-account-link {
+    font-size: var(--font-down-1);
+    .d-button-label {
+        color: var(--tertiary);
+    }
+    margin: 0 auto;
+}
+
+.create-account-form, 
+.d-modal.create-account .login-form,
+.d-modal.create-account .modal-footer,
+.login-modal-body,
+.d-modal.login-modal:not(.hidden) .modal-footer,
+.d-modal.create-account .create-account-form .login-welcome-header {
+    background-color: #f0f3ff;
+}
+.d-modal.create-account .more-info {
+    margin-left: 1em;
+}
+.d-modal.create-account .modal-footer::before {
+    background-image: none;
+    height: 0;
+}
+
+.d-modal.create-account .modal-footer {
+    border-top: 1px solid #f0f3ff;
+    padding-left: 30px;
+    padding-right: 30px;
+    button.btn-primary {
+        width: 100%;
+    }
+    #login-link::before {
+        content: "Already have an account?";
+        margin-right: 0.5em;
+        color: var(--primary-high);
+    }
+    #login-link {
+        font-size: var(--font-down-1);
+        .d-button-label {
+            color: var(--tertiary);
+        }
+        margin: 0 auto;
+    }
+}
+
+/* hide sign up button, fix log in button */
+
+header .header-buttons {
+    button.sign-up-button {
+        display: none;
+    }
+    button.login-button, button.login-button:hover {
+        background-color: transparent;
+        padding: 0;
+        border: none;
+        .d-button-label {
+            display: none;
+        }
+        
+        svg, svg:hover {
+            
+            height: 1.5em;
+            width: 1.5em;
+        }
+    }
+}
+
+.landing-page .navigation-container {
+    display: none;
+}
+
+/* Also, change
+   js.login.title Login
+   js.create_account.title Sign up
+   */
+   
+/* Add border to versatile showcase */
+.showcase-main {
+    border: 1px solid #DCDFEC;
+    border-radius: 8px;
+}
+
+/*icons alignment*/
+.d-header-icons .d-icon {
+    font-size: var(--font);
+    line-height: var (--line-height);
+    width: 50%;
+}
+
+/*nav pills*/
+.nav-pills > li {
+    border: 1px solid #C3C6D4;
+    border-radius: 39px;
+}
+
+.community .d-icon-caret-right {
+    display: none;
+}
+
+/*******************************************************************************/
+/* Category banner CSS */
+/*******************************************************************************/
+
+.bullet-x-indicators {
+    display: none;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bullet-x {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #676879;
+    border-radius: 50%;
+    cursor: pointer;
+}
+    
+.bullet-x[data-index="0"] {
+    background-color: #6161ff;
+    border: 1px solid #6161ff;
+}

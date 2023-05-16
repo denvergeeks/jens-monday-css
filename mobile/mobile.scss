@@ -1,0 +1,251 @@
+
+/*******************************************************************************/
+/* Various fixes
+/*******************************************************************************/
+
+.category-main-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: var(--d-max-width);
+    text-align: left;
+}
+
+.category-banner-logo {
+    align-self: flex-start;
+    padding: 1em;
+    img {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+.category-title-header .category-title-contents {
+    margin-left: 0 !important;
+    padding: 1em !important;
+}
+
+.category-title {
+    font-size: 24px !important;
+}
+
+.top-menu .menu-content {
+    display: none;
+}
+
+.top-menu {
+    background: #222222;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+/* fix font for search banner */
+.custom-search-banner h1 {
+    font-family: "Poppins",sans-serif;
+    font-size: 56px;
+}
+.custom-search-banner p {
+    font-family: "Poppins",sans-serif;
+    font-size: 16px;
+}
+
+/*******************************************************************************/
+/* Login/signup modal
+/*******************************************************************************/
+
+.login-modal:not(.hidden) .login-left-side {
+    background: #F0F3FF;
+}
+
+.d-modal.create-account .login-welcome-header, 
+.d-modal.login-modal .login-welcome-header, 
+.invites-show .login-welcome-header, 
+.admin-invite-page .login-welcome-header {
+    background: inherit;
+    .waving-hand {
+        display: none;
+    }
+}
+
+
+#login-form #credentials input {
+    height: 40px;
+}
+.modal-footer #login-button {
+    margin-right: 0px;
+    width: 100%;
+    svg {
+        display: none;
+    }
+}
+
+#new-account-link::before {
+    content: "Don't have an account yet?";
+    margin-right: 0.5em;
+    color: var(--primary-high);
+}
+#new-account-link {
+    font-size: var(--font-down-1);
+    .d-button-label {
+        color: var(--tertiary);
+    }
+    margin: 0 auto;
+}
+
+.create-account-form, 
+.d-modal.create-account .login-form,
+.d-modal.create-account .modal-footer,
+.login-modal-body,
+.d-modal.login-modal:not(.hidden) .modal-footer,
+.d-modal.create-account .create-account-form .login-welcome-header {
+    background-color: #f0f3ff;
+}
+.d-modal.create-account .more-info {
+    margin-left: 1em;
+}
+.d-modal.create-account .modal-footer::before {
+    background-image: none;
+    height: 0;
+}
+
+.d-modal.create-account .modal-footer {
+    border-top: 1px solid #f0f3ff;
+    padding-left: 30px;
+    padding-right: 30px;
+    button.btn-primary {
+        width: 100%;
+    }
+    #login-link::before {
+        content: "Already have an account?";
+        margin-right: 0.5em;
+        color: var(--primary-high);
+    }
+    #login-link {
+        font-size: var(--font-down-1);
+        .d-button-label {
+            color: var(--tertiary);
+        }
+        margin: 0 auto;
+    }
+}
+
+/* hide sign up button, fix log in button */
+
+header .header-buttons {
+    button.sign-up-button {
+        display: none;
+    }
+    button.login-button, button.login-button:hover {
+        background-color: transparent;
+        padding: 0;
+        border: none;
+        .d-button-label {
+            display: none;
+        }
+        
+        svg, svg:hover {
+            
+            height: 1.5em;
+            width: 1.5em;
+        }
+    }
+}
+
+/* Also, change
+   js.login.title Login
+   js.create_account.title Sign up
+   */
+   
+/*******************************************************************************/
+/* Category banner CSS */
+/*******************************************************************************/
+
+.categories-banner-wrapper {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+.category-box {
+    display: flex;
+    min-width: 350px;
+    min-height: 110px;
+    margin: 5px;
+}
+
+.categories-header-item {
+    border-radius: 4px;
+    flex: 0 0 100%;
+    min-height: 120px;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    
+}
+
+.category-logo {
+    float: left;
+    width: 20%;
+    justify-content: flex-start;
+    img {
+        width: auto;
+        height: 25px;
+        align-self: center;
+        padding: 10px;
+    }
+}
+
+.category-title-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.category-title-link:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+.category-title-link:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.shortdesc1,.shortdesc2,.shortdesc3,.shortdesc4 {
+    display:none;
+}
+
+.category-banner-platform-discussions {
+    background: #00CA72;
+    .shortdesc1 {
+        display: flex;
+    }
+}
+
+.category-banner-announcements {
+    background: #6161FF;
+    .shortdesc2 {
+        display: flex;
+    }
+}
+
+
+.category-banner-submit-an-idea {
+    background: #FFCC00;
+    .shortdesc3 {
+        display: flex;
+    }
+}
+
+.category-banner-community-events {
+    background: #CFCFF9;
+    .shortdesc4 {
+        display: flex;
+    }
+}
+
+.category-text-contents {
+    margin-left: 20%;
+}
+
+body.landing-page .bullet-x-indicators {
+    display: flex;
+}
