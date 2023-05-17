@@ -214,6 +214,11 @@ a.discourse-tag.list-vote-count {
     flex-direction: row;
 }
 
+#top-menu .brand-logo-img {
+    height: 40px;
+    margin-top: 11px;
+}
+
 .menu-brand-logo:after {
     content: "| help center";
     font-size: 18px;
@@ -230,6 +235,10 @@ a.discourse-tag.list-vote-count {
 #main a.rightLink, a.rightLink:hover, a.rightLink:visited {
     color: #545767;
 }
+
+
+height: 40px;
+margin-top: 11px;
 
 /* login/signup */
 
