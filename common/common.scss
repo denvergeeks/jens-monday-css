@@ -213,14 +213,17 @@ a.discourse-tag.list-vote-count {
     display: flex;
     flex-direction: row;
 }
+
 .menu-brand-logo:after {
-    content: "| Staging Site";
+    content: "| help center";
     font-size: 18px;
     font-weight: 300;
     white-space: nowrap;
     padding: 1em 1em 0.8em 0.4em;
+    color: #333;
+    margin-bottom: 5px;
 }
-.top-menu {
+#main .top-menu {
     padding-top: 0;
     padding-bottom: 0;
 }
