@@ -132,7 +132,7 @@ body.category-submit-an-idea #navigation-bar, body.category-feature-requests #na
     }
 }
   
-body.category-submit-an-idea .category-breadcrumb {
+body.category-submit-an-idea .category-breadcrumb, body.category-feature-requests .category-breadcrumb {
     display: none !important;
     
 }
@@ -185,7 +185,7 @@ a.discourse-tag.list-vote-count {
     padding: 10px 20px;
 }
 
-.category-dach, .category-submit-an-idea, .category-community-events {
+.category-dach, .category-submit-an-idea, .category-feature-requests, .category-community-events {
     .category-title-contents {
         color: #000;
     }
