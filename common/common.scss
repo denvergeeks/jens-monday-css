@@ -402,3 +402,8 @@ header .header-buttons {
     background-color: #6161ff;
     border: 1px solid #6161ff;
 }
+
+/* Remove grey border on showcased categories on homepage */
+.custom-homepage-columns .showcase-main {
+    border: none;
+  }
