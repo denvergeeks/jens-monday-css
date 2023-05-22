@@ -185,10 +185,20 @@ a.discourse-tag.list-vote-count {
     padding: 10px 20px;
 }
 
-.category-dach, .category-submit-an-idea, .category-feature-requests, .category-community-events,
-.category-platform-discussions-monday-sales-crm, .category-platform-discussions-monday-dev {
+
+/* All category banner text is black */
+.category-title-contents {
+    color: #000;
+}
+
+/* except for these: */
+.category-announcements,
+.category-guidelines,
+.category-nonprofits,
+.category-platform-discussions-special-workflows-and-use-cases,
+.category-platform-discussions-platform-discussion {
     .category-title-contents {
-        color: #000;
+        color: #fff;
     }
 }
 
