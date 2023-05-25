@@ -398,3 +398,9 @@ header .header-buttons {
 .custom-homepage-columns .showcase-main {
     border: none;
   }
+
+/* make nav a bit smaller */
+
+.nav-pills > li > a, .nav-pills > li button {
+    font-size: inherit;
+}
