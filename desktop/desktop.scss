@@ -167,3 +167,46 @@
 .category-banner-community-events:hover {
     background: #ECEFF8;
 }
+
+/* nav pills more padding */
+
+.nav-pills > li > a {
+    padding: 8px 16px;
+}
+.nav-pills > li.active {
+    border: none;
+}
+
+/* padding on line below topic title with tags and votes should be 8px */
+
+#topic-title .title-wrapper {
+    padding-top: 16px;
+    .topic-category {
+        padding-top: 16px;
+    }
+}
+
+/* same in topic lists */
+
+.topic-list-item .link-bottom-line {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.topic-list-item .topic-list-data {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Above "recent discussions" (belongs in veratile showcase) */
+.custom-homepage-columns {
+    padding-top: 64px;
+}
+
+/* search banner padding */
+
+.custom-search-banner-wrap {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
