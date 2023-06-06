@@ -111,6 +111,7 @@ body, h1, h2, h3, h4, h5, h6, a, p {
 }
 
 #navigation-bar {
+    li.nav-item_all-requests,
     li.nav-item_under-consideration,
     li.nav-item_on-roadmap,
     li.nav-item_not-on-roadmap,
@@ -125,6 +126,7 @@ body.category-submit-an-idea #navigation-bar, body.category-feature-requests #na
     li.nav-item_new {
         display: none
     }
+    li.nav-item_all-requests,
     li.nav-item_under-consideration,
     li.nav-item_on-roadmap,
     li.nav-item_not-on-roadmap,
