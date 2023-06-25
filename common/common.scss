@@ -136,8 +136,12 @@ body.category-submit-an-idea #navigation-bar, body.category-feature-requests #na
 }
   
 body.category-submit-an-idea .category-breadcrumb, body.category-feature-requests .category-breadcrumb {
-    display: none !important;
-    
+    li {
+        display: none !important;
+    }
+    li:nth-child(2) {
+        display: flex !important;
+    }
 }
 
 /* Fixes by Richard */
