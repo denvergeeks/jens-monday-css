@@ -239,3 +239,10 @@ header .header-buttons {
 body.landing-page .bullet-x-indicators {
     display: flex;
 }
+
+// make logo smaller
+
+.d-header #site-logo {
+    height: 15px;
+    margin-left: 18px;
+}
